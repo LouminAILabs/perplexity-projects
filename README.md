@@ -98,13 +98,13 @@ Detailed model information and pricing can be found at [Perplexity AI Pricing Do
 The script allows interaction with several models from Perplexity AI, including but not limited to:
 
 **Detailed Model Information and Pricing (as of 24.04.22):**  
-    - 'llama-3-70b-instruct': $1.00 per 1M tokens, Context Length: 8192, Chat Completion  # Default  
-    - 'llama-3-8b-instruct': $0.20 per 1M tokens, Context Length: 8192, Chat Completion  # Commented out  
-    - 'codellama-70b-instruct': $1.00 per 1M tokens, Context Length: 16384, Chat Completion  # Commented out  
-    - 'sonar-small-chat': $0.20 per 1M tokens, Context Length: 16384, Chat Completion  # Commented out  
-    - 'sonar-medium-chat': $0.60 per 1M tokens, Context Length: 16384, Chat Completion  # Commented out  
-    - 'sonar-small-online': $5 per 1000 requests, $0.20 per 1M tokens, Context Length: 12000, Chat Completion  # Commented out  
-    - 'sonar-medium-online': $5 per 1000 requests, $0.60 per 1M tokens, Context Length: 12000, Chat Completion  # Commented out  
+    - `llama-3-70b-instruct`: $1.00 per 1M tokens, Context Length: 8192, Chat Completion  # Default  
+    - `llama-3-8b-instruct`: $0.20 per 1M tokens, Context Length: 8192, Chat Completion  # Commented out  
+    - `codellama-70b-instruct`: $1.00 per 1M tokens, Context Length: 16384, Chat Completion  # Commented out  
+    - `sonar-small-chat`: $0.20 per 1M tokens, Context Length: 16384, Chat Completion  # Commented out  
+    - `sonar-medium-chat`: $0.60 per 1M tokens, Context Length: 16384, Chat Completion  # Commented out  
+    - `sonar-small-online`: $5 per 1000 requests, $0.20 per 1M tokens, Context Length: 12000, Chat Completion  # Commented out  
+    - `sonar-medium-online`: $5 per 1000 requests, $0.60 per 1M tokens, Context Length: 12000, Chat Completion  # Commented out  
 
 Other models are available but commented out within the script for ease of use and customization.
 
