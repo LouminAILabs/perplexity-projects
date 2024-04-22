@@ -97,7 +97,7 @@ Detailed model information and pricing can be found at [Perplexity AI Pricing Do
 
 The script allows interaction with several models from Perplexity AI, including but not limited to:
 
-Detailed Model Information and Pricing (as of 24.04.22):  
+**Detailed Model Information and Pricing (as of 24.04.22):**  
     - 'llama-3-70b-instruct': $1.00 per 1M tokens, Context Length: 8192, Chat Completion  # Default  
     - 'llama-3-8b-instruct': $0.20 per 1M tokens, Context Length: 8192, Chat Completion  # Commented out  
     - 'codellama-70b-instruct': $1.00 per 1M tokens, Context Length: 16384, Chat Completion  # Commented out  
