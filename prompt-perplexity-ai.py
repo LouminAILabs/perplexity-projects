@@ -35,9 +35,13 @@ print(response)
 
 # Supported models include various configurations with different token pricing and request costs, suitable for different use cases and budget considerations.
 """
-from perplexityai import Perplexity
 import requests
 import json
+import os
+import pandas as pd
+import logging
+import dotenv
+
 
 # DEFAULT PROMPT: Option (1) - Send a prompt to Perplexity AI with default parameters.
 def send_prompt_to_perplexity(prompt, max_tokens=1000, model='llama-3-70b-instruct', temperature=1.0, top_p=1.0, stream=False):
@@ -107,7 +111,7 @@ def send_prompt_to_perplexity(prompt, max_tokens=1000, model='llama-3-70b-instru
     headers = {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer YOUR_API_KEY'
+        'Authorization': f'Bearer {os.getenv("PERPLEXITY_API_KEY")}'
     }
     body = {
         'model': model,
