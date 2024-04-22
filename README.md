@@ -39,6 +39,81 @@ To get started with our tools:
 2. Install the required dependencies.
 3. Explore the examples to see how to integrate and extend Perplexity.ai's capabilities.
 
+---
+
+# SPECIFIC REPO ELEMENTS
+
+## # README for Perplexity.ai Integration Script
+
+## Introduction
+
+This repository houses a dynamic Python script designed for interacting with Perplexity AI's advanced API. Developed by LouminAI Labs, the script exemplifies how to leverage AI to generate responsive and contextual text based on user prompts. This script facilitates seamless interaction with Perplexity AI, allowing users to switch between different AI models dynamically and control the response generation process comprehensively.
+
+## Features
+
+### Dynamic AI Model Interaction
+The script includes a function, `send_prompt_to_perplexity`, which allows for the dynamic specification of the AI model used for generating responses. This feature enables users to adjust their AI model choice on-the-fly without needing to alter the script's codebase, making it highly adaptable to various needs and conditions.
+
+### Robust Error Handling
+Comprehensive error handling is embedded within the function to ensure that any exceptions occurring during the API request process are caught and reported accurately. This ensures that users can understand and rectify issues quickly, enhancing reliability.
+
+### Flexible Response Control
+The script offers two options for sending prompts to Perplexity AI:
+- **Option 1**: Sends a prompt with default parameters.
+- **Option 2**: Provides detailed control over the response generation process through additional parameters such as `temperature`, `top_p`, `top_k`, `stream`, `presence_penalty`, and `frequency_penalty`.
+
+## Usage
+
+### Basic Usage
+To use the script with the default settings:
+```python
+response = send_prompt_to_perplexity("Explain quantum physics.")
+print(response)
+```
+
+### Advanced Usage
+For detailed control over the AI's response, you can specify additional parameters:
+```python
+response = send_prompt_to_perplexity("Describe the solar system.", temperature=0.5, top_p=0.9, stream=True)
+print(response)
+```
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/LouminAI/perplexity-ai-integration.git
+   ```
+2. Install required dependencies:
+   ```bash
+   pip install requests
+   ```
+
+## Documentation
+
+Detailed model information and pricing can be found at [Perplexity AI Pricing Documentation](https://docs.perplexity.ai/docs/pricing). The script supports various models with different token pricing and request costs, suitable for diverse use cases and budget considerations.
+
+## Supported Models
+
+The script allows interaction with several models from Perplexity AI, including but not limited to:
+
+Detailed Model Information and Pricing (as of 24.04.22):
+    - 'llama-3-70b-instruct': $1.00 per 1M tokens, Context Length: 8192, Chat Completion
+    - 'llama-3-8b-instruct': $0.20 per 1M tokens, Context Length: 8192, Chat Completion  # Commented out
+    - 'codellama-70b-instruct': $1.00 per 1M tokens, Context Length: 16384, Chat Completion  # Commented out
+    - 'sonar-small-chat': $0.20 per 1M tokens, Context Length: 16384, Chat Completion  # Commented out
+    - 'sonar-medium-chat': $0.60 per 1M tokens, Context Length: 16384, Chat Completion  # Commented out
+    - 'sonar-small-online': $5 per 1000 requests, $0.20 per 1M tokens, Context Length: 12000, Chat Completion  # Commented out
+    - 'sonar-medium-online': $5 per 1000 requests, $0.60 per 1M tokens, Context Length: 12000, Chat Completion  # Commented out
+
+Other models are available but commented out within the script for ease of use and customization.
+
+## Error Handling
+
+Errors are managed within the script to provide clear and actionable feedback, particularly focusing on HTTP and validation errors that might occur during API interactions.
+
+---
+
 ## How to Contribute
 
 We encourage contributions from the community! Whether you're fixing bugs, adding features, or improving documentation, your help is welcome. Please see our `CONTRIBUTING.md` for guidelines on how to make contributions.
