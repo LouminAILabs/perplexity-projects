@@ -43,7 +43,7 @@ To get started with our tools:
 
 # SPECIFIC REPO ELEMENTS
 
-## # README for Perplexity.ai Integration Script
+## # README for `prompt-perplexity-ai` | Perplexity.ai Integration Script
 
 ## Introduction
 
