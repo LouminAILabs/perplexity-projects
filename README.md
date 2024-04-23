@@ -43,16 +43,16 @@ To get started with our tools:
 
 # SPECIFIC REPO ELEMENTS
 
-## # README for `prompt-perplexity-ai` | Perplexity.ai Integration Script
+## # README for `prompt-perplexity-ai.py` | Perplexity.ai Integration Script
 
 ## Introduction
 
-This repository houses a dynamic Python script designed for interacting with Perplexity AI's advanced API. Developed by LouminAI Labs, the script exemplifies how to leverage AI to generate responsive and contextual text based on user prompts. This script facilitates seamless interaction with Perplexity AI, allowing users to switch between different AI models dynamically and control the response generation process comprehensively.
+This repository houses dynamic Python scripts designed for interacting with Perplexity AI's advanced API. Developed by LouminAI Labs, these scripts exemplifies how to leverage AI to generate responsive and contextual text based on user prompts. These scripts facilitate seamless interaction with Perplexity AI, allowing users to switch between different AI models dynamically and control the response generation process comprehensively.
 
 ## Features
 
 ### Dynamic AI Model Interaction
-The script includes a function, `send_prompt_to_perplexity`, which allows for the dynamic specification of the AI model used for generating responses. This feature enables users to adjust their AI model choice on-the-fly without needing to alter the script's codebase, making it highly adaptable to various needs and conditions.
+The script includes dynamic functions, to send the prompt to Perplexity, which allows for the dynamic specifications of the AI model used for generating responses. This feature enables users to adjust their AI model choice on-the-fly without needing to alter the script's codebase, making it highly adaptable to various needs and conditions.
 
 ### Robust Error Handling
 Comprehensive error handling is embedded within the function to ensure that any exceptions occurring during the API request process are caught and reported accurately. This ensures that users can understand and rectify issues quickly, enhancing reliability.
@@ -62,7 +62,7 @@ The script offers two options for sending prompts to Perplexity AI:
 - **Option 1**: Sends a prompt with default parameters.
 - **Option 2**: Provides detailed control over the response generation process through additional parameters such as `temperature`, `top_p`, `top_k`, `stream`, `presence_penalty`, and `frequency_penalty`.
 
-## Usage
+## Usage - Python Version
 
 ### Basic Usage
 To use the script with the default settings:
@@ -111,6 +111,20 @@ Other models are available but commented out within the script for ease of use a
 ## Error Handling
 
 Errors are managed within the script to provide clear and actionable feedback, particularly focusing on HTTP and validation errors that might occur during API interactions.
+
+---
+
+## # Info for `promptPerplexity-ai.js` | Perplexity.ai Integration Script
+
+### User Description:  
+
+This script is a JavaScript application that allows users to send prompts to the Perplexity AI API and receive generated responses. Users can specify the prompt text, the maximum number of tokens to generate, and the AI model to use. The script provides a simple interface for interacting with the Perplexity AI API, making it easy for users to experiment with different prompts and models to generate desired outputs.
+
+### Developer Description:  
+
+The script is a JavaScript implementation of a client for the Perplexity AI API. It provides a flexible and dynamic function named sendPromptToPerplexity that allows developers to send prompts to the API and retrieve generated responses. The function supports various parameters for controlling the response generation process, such as the prompt text, maximum tokens, AI model, temperature, top-p sampling, and more. The script includes detailed error handling to catch and report exceptions that may occur during the API request process. It also provides two options for sending prompts, each with different levels of control over the generation process. The script is designed to be easily integrated into other applications or used as a standalone tool for interacting with the Perplexity AI API.
+
+(Additional details may be appended over time here.) 
 
 ---
 
